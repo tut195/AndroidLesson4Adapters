@@ -9,6 +9,8 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
+    <activity android:name=".edittext_underline_style_example.EditTextUnderlineColorExample">
+    </activity>
     <activity android:name=".recycler_adapter.RecyclerAdapterActivity">
     </activity>
     <activity android:name=".array_adapter.ArrayAdapterActivity">

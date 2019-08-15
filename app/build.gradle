@@ -1,4 +1,4 @@
-apply pluandroidx.recyclerview:recyclerview:1.1.0-beta02gin: 'com.android.application'
+apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
@@ -16,6 +16,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    // Butterknife requires Java 8.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -29,4 +35,9 @@ dependencies {
     // recycler view
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0-beta02'
+
+    // ButterKnife
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
 }

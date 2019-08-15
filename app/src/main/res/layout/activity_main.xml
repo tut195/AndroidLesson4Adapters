@@ -19,8 +19,15 @@
     android:id="@+id/btRecyclerAdapter"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:onClick="navigateRecyclerAdaprerActivity"
+    android:onClick="navigateRecyclerAdapterActivity"
     android:text="Navigate Recycler Adapter"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="navigateUnderlineExample"
+    android:text="Navigate Underline Color Example"
     android:textAllCaps="false"/>
 
 
